@@ -77,7 +77,7 @@ DEFT-Intruder is a lightweight, real-time malware detection daemon for Linux sys
 
 ```bash
 # Clone the repository
-git clone https://github.com/Deftdotcx/deft-intruder.git
+git clone https://github.com/539hex/deft-intruder.git
 cd deft-intruder
 
 # Build the project
@@ -426,8 +426,8 @@ DEFT-Intruder is provided for educational and security research purposes. While 
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/Deftdotcx/deft-intruder/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Deftdotcx/deft-intruder/discussions)
+- **Issues**: [GitHub Issues](https://github.com/539hex/deft-intruder/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/539hex/deft-intruder/discussions)
 
 ---
 

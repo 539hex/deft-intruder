@@ -1,6 +1,6 @@
 [Unit]
 Description=DEFT-Intruder Real-time Malware Detection Daemon
-Documentation=https://github.com/Deftdotcx/deft-intruder
+Documentation=https://github.com/539hex/deft-intruder
 After=network.target
 
 [Service]
