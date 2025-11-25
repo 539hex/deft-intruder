@@ -1,0 +1,26 @@
+[Unit]
+Description=DEFT-Intruder Real-time Malware Detection Daemon
+Documentation=https://github.com/Deftdotcx/deft-intruder
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/deft-intruder.pid
+ExecStart=/usr/local/bin/deft-intruder -d
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=on-failure
+RestartSec=5
+
+# Security hardening
+NoNewPrivileges=no
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/log /var/run /var/quarantine
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target

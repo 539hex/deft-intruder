@@ -1,0 +1,54 @@
+# Build artifacts
+build/
+bin/deft-intruder
+*.o
+*.a
+*.so
+*.dylib
+
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# EMBER data and trained models
+ember_data/
+ember2018/*.jsonl
+ember2018/*.txt
+!ember2018/.gitkeep
+
+# Logs
+*.log
+/var/log/deft-intruder.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug files
+*.dSYM/
+core
+core.*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Generated headers (if any)
+src/*.generated.h
+
+# Quarantine directory
+/var/quarantine/
+
+# Distribution packages
+*.tar.gz
+*.deb
+*.rpm

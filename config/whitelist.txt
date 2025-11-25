@@ -1,0 +1,63 @@
+# DEFT-Intruder Whitelist Configuration
+# 
+# This file contains paths to executables that should be excluded from
+# malware scanning. One path per line.
+#
+# Lines starting with # are comments.
+# Empty lines are ignored.
+#
+# NOTE: System paths (/bin, /usr/bin, /sbin, /usr/sbin, /lib, /usr/lib)
+# are automatically whitelisted by default.
+
+# Common desktop applications
+/usr/bin/firefox
+/usr/bin/firefox-esr
+/usr/bin/chromium
+/usr/bin/chromium-browser
+/usr/bin/google-chrome
+/usr/bin/code
+/usr/bin/vim
+/usr/bin/nvim
+/usr/bin/emacs
+
+# Development tools
+/usr/bin/python3
+/usr/bin/python
+/usr/bin/node
+/usr/bin/npm
+/usr/bin/cargo
+/usr/bin/rustc
+/usr/bin/go
+/usr/bin/java
+
+# VS Code Server (for remote development)
+/home/*/.vscode-server/*
+
+# Package managers
+/usr/bin/apt
+/usr/bin/apt-get
+/usr/bin/dpkg
+/usr/bin/yum
+/usr/bin/dnf
+/usr/bin/pacman
+/usr/bin/snap
+/usr/bin/flatpak
+
+# Docker/Container tools
+/usr/bin/docker
+/usr/bin/podman
+/usr/bin/containerd
+
+# Database servers
+/usr/sbin/mysqld
+/usr/lib/postgresql/*/bin/postgres
+/usr/bin/redis-server
+/usr/bin/mongod
+
+# Web servers
+/usr/sbin/nginx
+/usr/sbin/apache2
+/usr/sbin/httpd
+
+# Add your custom whitelist entries below:
+# /path/to/your/trusted/application
